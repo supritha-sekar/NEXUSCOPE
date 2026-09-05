@@ -1,0 +1,33 @@
+[
+  {
+    "id": "RB-NET-001",
+    "title": "WAN Link Failure / Device Reachability",
+    "trigger_types": [
+      "LINK_DOWN",
+      "DEVICE_UNREACHABLE",
+      "HIGH_LATENCY"
+    ],
+    "initial_response": "Confirm the WAN path, check the router interface, verify alternate-path reachability, and prepare approved failover if needed.",
+    "steps": [
+      "Verify interface/link state on router-R17.",
+      "Check reachability from an alternate path.",
+      "Compare latency before and after the failure.",
+      "Initiate approved failover if the path remains unavailable.",
+      "Escalate if the fault domain cannot be confirmed."
+    ]
+  },
+  {
+    "id": "RB-NET-002",
+    "title": "Authentication Failure Burst",
+    "trigger_types": [
+      "AUTH_FAILURE_BURST"
+    ],
+    "initial_response": "Check authentication gateway logs, identify the affected source range, and compare the burst with recent configuration changes.",
+    "steps": [
+      "Review gateway events for the affected window.",
+      "Identify concentration by source/service.",
+      "Check recent AAA or configuration changes.",
+      "Escalate if the cause is not covered."
+    ]
+  }
+]

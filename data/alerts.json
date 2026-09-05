@@ -1,0 +1,50 @@
+[
+  {
+    "id": "A-1001",
+    "time": "10:42",
+    "device": "router-R17",
+    "site": "SITE-A",
+    "type": "LINK_DOWN",
+    "description": "WAN uplink to core is down"
+  },
+  {
+    "id": "A-1002",
+    "time": "10:42",
+    "device": "switch-S04",
+    "site": "SITE-A",
+    "type": "DEVICE_UNREACHABLE",
+    "description": "Access switch unreachable from NOC"
+  },
+  {
+    "id": "A-1003",
+    "time": "10:43",
+    "device": "router-R17",
+    "site": "SITE-A",
+    "type": "HIGH_LATENCY",
+    "description": "Latency above 300 ms on WAN path"
+  },
+  {
+    "id": "A-1004",
+    "time": "10:43",
+    "device": "router-R17",
+    "site": "SITE-A",
+    "type": "LINK_DOWN",
+    "description": "Duplicate link-down alert"
+  },
+  {
+    "id": "A-1005",
+    "time": "10:44",
+    "device": "auth-gateway-2",
+    "site": "SITE-B",
+    "type": "AUTH_FAILURE_BURST",
+    "description": "Repeated authentication failures"
+  },
+  {
+    "id": "A-1006",
+    "time": "10:45",
+    "device": "printer-01",
+    "site": "SITE-C",
+    "type": "AUTH_FAILURE",
+    "description": "Single failed authentication attempt"
+  }
+]
